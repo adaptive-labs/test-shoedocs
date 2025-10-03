@@ -1,0 +1,43 @@
+# Shoedocs Configuration
+# Test repository for validating shoedocs functionality
+
+schemaVersion: 1
+
+site:
+  name: "Test Shoedocs"
+  description: "Testing if shoedocs works"
+
+features:
+  search: true
+  sidebar: true
+  breadcrumbs: true
+  last_updated: true
+  toc: true
+
+docs:
+  directory: "docs"
+  homepage: "README.md"
+
+navigation:
+  - title: "Getting Started"
+    items:
+      - title: "Overview"
+        path: "../README.md"
+
+  - title: "Documentation"
+    items:
+      - title: "Test Page"
+        path: "test.md"
+      - title: "Test Page 2"
+        path: "test2.md"
+
+tags:
+  - test
+  - documentation
+  - shoedocs
+
+metadata:
+  language: "en"
+  version: "1.0"
+  authors:
+    - "Platform Team"
