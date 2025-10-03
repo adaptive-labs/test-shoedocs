@@ -1,0 +1,21 @@
+schemaVersion: 1
+
+service:
+  id: test-shoedocs
+  name: Test Shoedocs
+  type: techdocs
+
+owner:
+  - type: team
+    id: platform-team
+
+lifecycle: production
+
+tags:
+  - documentation
+  - test
+  - techdocs
+
+links:
+  - name: Repository
+    url: https://github.com/testorg/test-shoedocs

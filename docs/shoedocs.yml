@@ -3,6 +3,9 @@
 
 schemaVersion: 1
 
+# Optional: Link to entity (will auto-detect if omitted)
+# entity: test-shoedocs
+
 site:
   name: "Test Shoedocs"
   description: "Testing if shoedocs works"
