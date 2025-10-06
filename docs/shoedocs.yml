@@ -22,11 +22,6 @@ docs:
   homepage: "README.md"
 
 navigation:
-  - title: "Getting Started"
-    items:
-      - title: "Overview"
-        path: "../README.md"
-
   - title: "Documentation"
     items:
       - title: "Test Page"
