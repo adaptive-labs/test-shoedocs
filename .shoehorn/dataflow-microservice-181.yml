@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-microservice-181
+  name: Dataflow Microservice 181
+  type: microservice
+  description: Dataflow Microservice 181 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-microservice-181
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1081644905/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-microservice-181
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9802

@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: acme-frontend-532
+  name: Acme Frontend 532
+  type: frontend
+  description: Acme Frontend 532 service for acme platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-frontend-532
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1632647682/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-frontend-532
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7494
+relations:
+  - type: calls
+    target: service:acme-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

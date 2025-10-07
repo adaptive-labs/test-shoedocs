@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-ml-650
+  name: Dataflow Ml 650
+  type: ml
+  description: Dataflow Ml 650 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-ml-650
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1502440635/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-ml-650
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9753

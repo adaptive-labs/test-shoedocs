@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-523
+  name: Innovate Ml 523
+  type: ml
+  description: Innovate Ml 523 service for innovate platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-523
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/752309468/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-523
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4273

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-83
+  name: Innovate Ml 83
+  type: ml
+  description: Innovate Ml 83 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: development
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-83
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/453940796/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-83
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3273

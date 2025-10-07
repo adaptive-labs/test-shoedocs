@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-microservice-942
+  name: Techcorp Microservice 942
+  type: microservice
+  description: Techcorp Microservice 942 service for techcorp platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-microservice-942
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/977268207/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-microservice-942
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7139

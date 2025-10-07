@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-database-340
+  name: Cloudsys Database 340
+  type: database
+  description: Cloudsys Database 340 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-database-340
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1109466321/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-database-340
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9997

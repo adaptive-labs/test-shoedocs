@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-frontend-1
+  name: Techcorp Frontend 1
+  type: frontend
+  description: Techcorp Frontend 1 service for techcorp platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-frontend-1
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1549636492/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-frontend-1
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4656
+relations:
+  - type: calls
+    target: service:techcorp-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

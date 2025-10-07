@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-801
+  name: Innovate Ml 801
+  type: ml
+  description: Innovate Ml 801 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: development
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-801
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/888333041/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-801
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8504

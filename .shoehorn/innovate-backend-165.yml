@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-backend-165
+  name: Innovate Backend 165
+  type: backend
+  description: Innovate Backend 165 service for innovate platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-backend-165
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/147623777/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-backend-165
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3370

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-infra-1236
+  name: Acme Infra 1236
+  type: infra
+  description: Acme Infra 1236 service for acme platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-infra-1236
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/478792877/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-infra-1236
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5015

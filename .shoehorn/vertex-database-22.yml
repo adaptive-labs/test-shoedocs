@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-database-22
+  name: Vertex Database 22
+  type: database
+  description: Vertex Database 22 service for vertex platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-database-22
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1114152822/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-database-22
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6941

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-microservice-308
+  name: Quantum Microservice 308
+  type: microservice
+  description: Quantum Microservice 308 service for quantum platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-microservice-308
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1699299919/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-microservice-308
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8572

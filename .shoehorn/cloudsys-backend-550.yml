@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-550
+  name: Cloudsys Backend 550
+  type: backend
+  description: Cloudsys Backend 550 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: development
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-550
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1399467757/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-550
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6687

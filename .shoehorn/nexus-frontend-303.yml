@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-frontend-303
+  name: Nexus Frontend 303
+  type: frontend
+  description: Nexus Frontend 303 service for nexus platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: experimental
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-frontend-303
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1977165169/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-frontend-303
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6963
+relations:
+  - type: calls
+    target: service:nexus-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

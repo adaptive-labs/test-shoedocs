@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-microservice-1547
+  name: Techcorp Microservice 1547
+  type: microservice
+  description: Techcorp Microservice 1547 service for techcorp platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-microservice-1547
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/156976548/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-microservice-1547
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6157

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-529
+  name: Innovate Microservice 529
+  type: microservice
+  description: Innovate Microservice 529 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-529
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/320556235/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-529
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3157

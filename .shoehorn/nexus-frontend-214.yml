@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-frontend-214
+  name: Nexus Frontend 214
+  type: frontend
+  description: Nexus Frontend 214 service for nexus platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-frontend-214
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1767647417/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-frontend-214
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4157
+relations:
+  - type: calls
+    target: service:nexus-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

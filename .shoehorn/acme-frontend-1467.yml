@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: acme-frontend-1467
+  name: Acme Frontend 1467
+  type: frontend
+  description: Acme Frontend 1467 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-frontend-1467
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1609906368/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-frontend-1467
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7141
+relations:
+  - type: calls
+    target: service:acme-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

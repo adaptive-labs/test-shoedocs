@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-api-182
+  name: Quantum Api 182
+  type: api
+  description: Quantum Api 182 service for quantum platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-api-182
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1804673309/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-api-182
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4151

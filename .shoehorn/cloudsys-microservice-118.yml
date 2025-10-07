@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-118
+  name: Cloudsys Microservice 118
+  type: microservice
+  description: Cloudsys Microservice 118 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-118
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/380104882/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-118
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8161

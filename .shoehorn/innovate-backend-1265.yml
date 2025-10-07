@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-backend-1265
+  name: Innovate Backend 1265
+  type: backend
+  description: Innovate Backend 1265 service for innovate platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-backend-1265
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/252776684/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-backend-1265
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7850

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-496
+  name: Cloudsys Data 496
+  type: data
+  description: Cloudsys Data 496 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-496
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/831408156/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-496
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5372

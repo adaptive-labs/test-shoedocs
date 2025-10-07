@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-ml-829
+  name: Acme Ml 829
+  type: ml
+  description: Acme Ml 829 service for acme platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-ml-829
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/164414147/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-ml-829
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7313

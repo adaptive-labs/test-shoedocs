@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-backend-89
+  name: Nexus Backend 89
+  type: backend
+  description: Nexus Backend 89 service for nexus platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-backend-89
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/26541538/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-backend-89
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9306

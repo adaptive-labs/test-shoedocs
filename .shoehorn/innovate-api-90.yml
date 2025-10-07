@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-api-90
+  name: Innovate Api 90
+  type: api
+  description: Innovate Api 90 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-api-90
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1918434833/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-api-90
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8219

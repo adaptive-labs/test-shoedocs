@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-database-1425
+  name: Vertex Database 1425
+  type: database
+  description: Vertex Database 1425 service for vertex platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-database-1425
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/240705688/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-database-1425
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8073

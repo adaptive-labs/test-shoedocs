@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-database-619
+  name: Innovate Database 619
+  type: database
+  description: Innovate Database 619 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-database-619
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/948328899/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-database-619
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7152

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-microservice-255
+  name: Quantum Microservice 255
+  type: microservice
+  description: Quantum Microservice 255 service for quantum platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-microservice-255
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1982863611/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-microservice-255
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7881

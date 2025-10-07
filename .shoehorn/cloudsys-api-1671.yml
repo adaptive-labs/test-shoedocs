@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-1671
+  name: Cloudsys Api 1671
+  type: api
+  description: Cloudsys Api 1671 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-1671
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/85417090/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-1671
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3709

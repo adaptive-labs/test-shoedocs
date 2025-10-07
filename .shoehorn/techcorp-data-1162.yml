@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-data-1162
+  name: Techcorp Data 1162
+  type: data
+  description: Techcorp Data 1162 service for techcorp platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-data-1162
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1724591724/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-data-1162
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4724

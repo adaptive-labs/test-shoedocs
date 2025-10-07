@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-835
+  name: Vertex Microservice 835
+  type: microservice
+  description: Vertex Microservice 835 service for vertex platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-835
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/821314905/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-835
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4483

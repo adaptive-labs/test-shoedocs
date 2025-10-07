@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-639
+  name: Innovate Ml 639
+  type: ml
+  description: Innovate Ml 639 service for innovate platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-639
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/203729300/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-639
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4343

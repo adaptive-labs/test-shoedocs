@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-632
+  name: Cloudsys Microservice 632
+  type: microservice
+  description: Cloudsys Microservice 632 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-632
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/240205135/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-632
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4996

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-microservice-48
+  name: Nexus Microservice 48
+  type: microservice
+  description: Nexus Microservice 48 service for nexus platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-microservice-48
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/239725383/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-microservice-48
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5669

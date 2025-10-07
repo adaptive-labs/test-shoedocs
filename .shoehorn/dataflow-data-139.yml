@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-139
+  name: Dataflow Data 139
+  type: data
+  description: Dataflow Data 139 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-139
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/744255851/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-139
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6282

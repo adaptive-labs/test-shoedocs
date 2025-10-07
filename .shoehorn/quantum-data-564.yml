@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-data-564
+  name: Quantum Data 564
+  type: data
+  description: Quantum Data 564 service for quantum platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-data-564
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/757135940/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-data-564
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6355

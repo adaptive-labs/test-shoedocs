@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-infra-435
+  name: Acme Infra 435
+  type: infra
+  description: Acme Infra 435 service for acme platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-infra-435
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1753917874/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-infra-435
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3480

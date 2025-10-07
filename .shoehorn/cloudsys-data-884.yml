@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-884
+  name: Cloudsys Data 884
+  type: data
+  description: Cloudsys Data 884 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-884
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2006984612/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-884
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7874

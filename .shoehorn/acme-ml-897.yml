@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-ml-897
+  name: Acme Ml 897
+  type: ml
+  description: Acme Ml 897 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-ml-897
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1570663774/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-ml-897
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5226

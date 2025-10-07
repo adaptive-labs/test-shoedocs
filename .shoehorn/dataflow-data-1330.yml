@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-1330
+  name: Dataflow Data 1330
+  type: data
+  description: Dataflow Data 1330 service for dataflow platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-1330
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/363622154/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-1330
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4210

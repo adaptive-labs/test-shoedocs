@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-frontend-1594
+  name: Quantum Frontend 1594
+  type: frontend
+  description: Quantum Frontend 1594 service for quantum platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-frontend-1594
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/2053818543/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-frontend-1594
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5351
+relations:
+  - type: calls
+    target: service:quantum-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

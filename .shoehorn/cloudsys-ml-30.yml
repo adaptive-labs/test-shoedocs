@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-ml-30
+  name: Cloudsys Ml 30
+  type: ml
+  description: Cloudsys Ml 30 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-ml-30
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1674687556/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-ml-30
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6369

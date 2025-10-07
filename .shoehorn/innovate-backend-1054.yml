@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-backend-1054
+  name: Innovate Backend 1054
+  type: backend
+  description: Innovate Backend 1054 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-backend-1054
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1656695452/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-backend-1054
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9390

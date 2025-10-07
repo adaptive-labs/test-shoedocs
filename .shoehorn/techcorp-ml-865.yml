@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-ml-865
+  name: Techcorp Ml 865
+  type: ml
+  description: Techcorp Ml 865 service for techcorp platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-ml-865
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/992647731/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-ml-865
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8546

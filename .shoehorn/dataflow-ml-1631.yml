@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-ml-1631
+  name: Dataflow Ml 1631
+  type: ml
+  description: Dataflow Ml 1631 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-ml-1631
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1122970122/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-ml-1631
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8062

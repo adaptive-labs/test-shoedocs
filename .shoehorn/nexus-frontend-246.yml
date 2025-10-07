@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-frontend-246
+  name: Nexus Frontend 246
+  type: frontend
+  description: Nexus Frontend 246 service for nexus platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-frontend-246
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/246043801/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-frontend-246
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5847
+relations:
+  - type: calls
+    target: service:nexus-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-ml-1428
+  name: Cloudsys Ml 1428
+  type: ml
+  description: Cloudsys Ml 1428 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-ml-1428
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1331619518/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-ml-1428
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9039

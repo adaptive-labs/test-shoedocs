@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-backend-937
+  name: Techcorp Backend 937
+  type: backend
+  description: Techcorp Backend 937 service for techcorp platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-backend-937
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/683314893/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-backend-937
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4816

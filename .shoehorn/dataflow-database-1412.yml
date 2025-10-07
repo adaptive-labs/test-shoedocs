@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-database-1412
+  name: Dataflow Database 1412
+  type: database
+  description: Dataflow Database 1412 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: development
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-database-1412
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1163564371/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-database-1412
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8093

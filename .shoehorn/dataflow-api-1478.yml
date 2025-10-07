@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-api-1478
+  name: Dataflow Api 1478
+  type: api
+  description: Dataflow Api 1478 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-api-1478
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1294175024/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-api-1478
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6346

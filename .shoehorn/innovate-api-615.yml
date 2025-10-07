@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-api-615
+  name: Innovate Api 615
+  type: api
+  description: Innovate Api 615 service for innovate platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-api-615
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/872437554/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-api-615
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7408

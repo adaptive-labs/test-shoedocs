@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-frontend-1005
+  name: Techcorp Frontend 1005
+  type: frontend
+  description: Techcorp Frontend 1005 service for techcorp platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-frontend-1005
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1568908179/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-frontend-1005
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4661
+relations:
+  - type: calls
+    target: service:techcorp-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

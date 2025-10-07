@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-data-1354
+  name: Techcorp Data 1354
+  type: data
+  description: Techcorp Data 1354 service for techcorp platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-data-1354
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/701758388/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-data-1354
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3307

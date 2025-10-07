@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-810
+  name: Dataflow Data 810
+  type: data
+  description: Dataflow Data 810 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-810
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1987663087/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-810
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8136

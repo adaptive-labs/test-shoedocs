@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-21
+  name: Dataflow Data 21
+  type: data
+  description: Dataflow Data 21 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-21
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/335144577/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-21
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8720

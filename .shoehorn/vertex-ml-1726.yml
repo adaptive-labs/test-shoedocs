@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-ml-1726
+  name: Vertex Ml 1726
+  type: ml
+  description: Vertex Ml 1726 service for vertex platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-ml-1726
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1005251735/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-ml-1726
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8542

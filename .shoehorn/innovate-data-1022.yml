@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-data-1022
+  name: Innovate Data 1022
+  type: data
+  description: Innovate Data 1022 service for innovate platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-data-1022
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/545084301/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-data-1022
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5954

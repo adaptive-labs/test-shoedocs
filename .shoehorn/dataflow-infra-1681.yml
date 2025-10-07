@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-infra-1681
+  name: Dataflow Infra 1681
+  type: infra
+  description: Dataflow Infra 1681 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: development
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-infra-1681
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/2077452370/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-infra-1681
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4535

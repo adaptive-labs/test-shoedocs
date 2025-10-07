@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-backend-377
+  name: Quantum Backend 377
+  type: backend
+  description: Quantum Backend 377 service for quantum platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-backend-377
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1277795387/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-backend-377
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5015

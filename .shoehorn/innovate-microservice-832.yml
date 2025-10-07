@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-832
+  name: Innovate Microservice 832
+  type: microservice
+  description: Innovate Microservice 832 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-832
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1989798878/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-832
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4413

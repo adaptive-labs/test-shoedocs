@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-database-1169
+  name: Cloudsys Database 1169
+  type: database
+  description: Cloudsys Database 1169 service for cloudsys platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-database-1169
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1077196384/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-database-1169
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8766

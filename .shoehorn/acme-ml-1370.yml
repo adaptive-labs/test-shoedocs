@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-ml-1370
+  name: Acme Ml 1370
+  type: ml
+  description: Acme Ml 1370 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-ml-1370
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1466547763/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-ml-1370
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4838

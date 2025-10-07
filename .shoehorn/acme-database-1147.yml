@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-database-1147
+  name: Acme Database 1147
+  type: database
+  description: Acme Database 1147 service for acme platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-database-1147
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1234999533/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-database-1147
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4973

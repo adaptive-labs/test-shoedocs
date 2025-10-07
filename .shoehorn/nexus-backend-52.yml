@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-backend-52
+  name: Nexus Backend 52
+  type: backend
+  description: Nexus Backend 52 service for nexus platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-backend-52
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1223060393/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-backend-52
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6360

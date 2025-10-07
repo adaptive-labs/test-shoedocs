@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: acme-frontend-20
+  name: Acme Frontend 20
+  type: frontend
+  description: Acme Frontend 20 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-frontend-20
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1064145818/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-frontend-20
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9580
+relations:
+  - type: calls
+    target: service:acme-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

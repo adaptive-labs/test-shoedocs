@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-infra-273
+  name: Nexus Infra 273
+  type: infra
+  description: Nexus Infra 273 service for nexus platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-infra-273
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1469988288/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-infra-273
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5222

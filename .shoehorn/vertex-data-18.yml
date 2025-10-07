@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-data-18
+  name: Vertex Data 18
+  type: data
+  description: Vertex Data 18 service for vertex platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-data-18
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1915492774/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-data-18
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8357

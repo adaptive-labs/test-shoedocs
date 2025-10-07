@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-infra-1221
+  name: Nexus Infra 1221
+  type: infra
+  description: Nexus Infra 1221 service for nexus platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-infra-1221
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1000359130/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-infra-1221
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9252

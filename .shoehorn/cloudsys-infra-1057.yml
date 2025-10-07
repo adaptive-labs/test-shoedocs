@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-infra-1057
+  name: Cloudsys Infra 1057
+  type: infra
+  description: Cloudsys Infra 1057 service for cloudsys platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: experimental
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-infra-1057
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1499069162/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-infra-1057
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5709

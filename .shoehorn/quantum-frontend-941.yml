@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-frontend-941
+  name: Quantum Frontend 941
+  type: frontend
+  description: Quantum Frontend 941 service for quantum platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-frontend-941
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/938404687/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-frontend-941
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3320
+relations:
+  - type: calls
+    target: service:quantum-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

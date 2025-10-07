@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-808
+  name: Innovate Ml 808
+  type: ml
+  description: Innovate Ml 808 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-808
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/2040073915/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-808
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5365

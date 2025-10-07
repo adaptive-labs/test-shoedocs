@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-backend-720
+  name: Nexus Backend 720
+  type: backend
+  description: Nexus Backend 720 service for nexus platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-backend-720
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1831212608/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-backend-720
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7274

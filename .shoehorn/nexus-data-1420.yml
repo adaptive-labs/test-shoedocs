@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-data-1420
+  name: Nexus Data 1420
+  type: data
+  description: Nexus Data 1420 service for nexus platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-data-1420
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1873298884/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-data-1420
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8893

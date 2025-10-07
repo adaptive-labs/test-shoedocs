@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-frontend-51
+  name: Dataflow Frontend 51
+  type: frontend
+  description: Dataflow Frontend 51 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-frontend-51
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1797847347/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-frontend-51
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9088
+relations:
+  - type: calls
+    target: service:dataflow-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

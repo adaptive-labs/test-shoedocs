@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-1734
+  name: Innovate Microservice 1734
+  type: microservice
+  description: Innovate Microservice 1734 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-1734
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1343180471/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-1734
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5985

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-infra-1771
+  name: Innovate Infra 1771
+  type: infra
+  description: Innovate Infra 1771 service for innovate platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-infra-1771
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/374665903/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-infra-1771
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8358

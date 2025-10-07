@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-backend-1287
+  name: Acme Backend 1287
+  type: backend
+  description: Acme Backend 1287 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-backend-1287
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/546278623/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-backend-1287
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4909

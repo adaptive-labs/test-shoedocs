@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-infra-1694
+  name: Techcorp Infra 1694
+  type: infra
+  description: Techcorp Infra 1694 service for techcorp platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-infra-1694
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1413813399/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-infra-1694
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6077

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-backend-279
+  name: Acme Backend 279
+  type: backend
+  description: Acme Backend 279 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-backend-279
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/741449257/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-backend-279
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5478

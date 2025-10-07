@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-1511
+  name: Cloudsys Data 1511
+  type: data
+  description: Cloudsys Data 1511 service for cloudsys platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-1511
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2115850979/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-1511
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3386

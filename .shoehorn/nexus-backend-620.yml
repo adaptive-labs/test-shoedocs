@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-backend-620
+  name: Nexus Backend 620
+  type: backend
+  description: Nexus Backend 620 service for nexus platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: development
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-backend-620
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1744776546/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-backend-620
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9951

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-data-1650
+  name: Acme Data 1650
+  type: data
+  description: Acme Data 1650 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-data-1650
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1714724710/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-data-1650
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8591

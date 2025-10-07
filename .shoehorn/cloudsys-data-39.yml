@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-39
+  name: Cloudsys Data 39
+  type: data
+  description: Cloudsys Data 39 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-39
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/927406613/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-39
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5459

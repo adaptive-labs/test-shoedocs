@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-database-351
+  name: Dataflow Database 351
+  type: database
+  description: Dataflow Database 351 service for dataflow platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-database-351
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/461743256/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-database-351
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9200

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-infra-209
+  name: Techcorp Infra 209
+  type: infra
+  description: Techcorp Infra 209 service for techcorp platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: development
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-infra-209
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1128469631/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-infra-209
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9414

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-api-1267
+  name: Nexus Api 1267
+  type: api
+  description: Nexus Api 1267 service for nexus platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-api-1267
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1267334374/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-api-1267
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3406

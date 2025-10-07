@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-415
+  name: Acme Api 415
+  type: api
+  description: Acme Api 415 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-415
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1140672438/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-415
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8698

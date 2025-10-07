@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-database-1292
+  name: Quantum Database 1292
+  type: database
+  description: Quantum Database 1292 service for quantum platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-database-1292
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/790391/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-database-1292
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7856

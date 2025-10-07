@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-api-717
+  name: Techcorp Api 717
+  type: api
+  description: Techcorp Api 717 service for techcorp platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-api-717
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/2097799779/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-api-717
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4555

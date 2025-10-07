@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-1314
+  name: Dataflow Data 1314
+  type: data
+  description: Dataflow Data 1314 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-1314
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1716331641/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-1314
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6208

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-1758
+  name: Cloudsys Microservice 1758
+  type: microservice
+  description: Cloudsys Microservice 1758 service for cloudsys platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-1758
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2099009756/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-1758
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7251

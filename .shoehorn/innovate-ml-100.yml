@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-100
+  name: Innovate Ml 100
+  type: ml
+  description: Innovate Ml 100 service for innovate platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-100
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/814004689/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-100
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6640

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-api-262
+  name: Innovate Api 262
+  type: api
+  description: Innovate Api 262 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-api-262
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1232176860/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-api-262
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6814

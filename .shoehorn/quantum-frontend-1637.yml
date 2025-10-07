@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-frontend-1637
+  name: Quantum Frontend 1637
+  type: frontend
+  description: Quantum Frontend 1637 service for quantum platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: experimental
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-frontend-1637
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1189988023/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-frontend-1637
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6033
+relations:
+  - type: calls
+    target: service:quantum-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

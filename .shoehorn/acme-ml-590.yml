@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-ml-590
+  name: Acme Ml 590
+  type: ml
+  description: Acme Ml 590 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-ml-590
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/862616707/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-ml-590
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6245

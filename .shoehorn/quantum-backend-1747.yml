@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-backend-1747
+  name: Quantum Backend 1747
+  type: backend
+  description: Quantum Backend 1747 service for quantum platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: development
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-backend-1747
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1042392477/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-backend-1747
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8147

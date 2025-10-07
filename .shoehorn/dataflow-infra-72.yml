@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-infra-72
+  name: Dataflow Infra 72
+  type: infra
+  description: Dataflow Infra 72 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-infra-72
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/507493180/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-infra-72
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4641

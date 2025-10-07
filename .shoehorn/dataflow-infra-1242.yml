@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-infra-1242
+  name: Dataflow Infra 1242
+  type: infra
+  description: Dataflow Infra 1242 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-infra-1242
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1855283937/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-infra-1242
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4335

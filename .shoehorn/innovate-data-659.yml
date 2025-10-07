@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-data-659
+  name: Innovate Data 659
+  type: data
+  description: Innovate Data 659 service for innovate platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-data-659
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1059206069/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-data-659
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9836

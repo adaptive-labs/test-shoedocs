@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-backend-433
+  name: Acme Backend 433
+  type: backend
+  description: Acme Backend 433 service for acme platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-backend-433
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/916859553/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-backend-433
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9906

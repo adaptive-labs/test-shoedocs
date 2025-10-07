@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-1153
+  name: Cloudsys Data 1153
+  type: data
+  description: Cloudsys Data 1153 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-1153
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/581978836/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-1153
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7953

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-ml-326
+  name: Cloudsys Ml 326
+  type: ml
+  description: Cloudsys Ml 326 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-ml-326
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2058121337/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-ml-326
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7232

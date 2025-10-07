@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-frontend-366
+  name: Vertex Frontend 366
+  type: frontend
+  description: Vertex Frontend 366 service for vertex platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-frontend-366
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1340460821/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-frontend-366
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6301
+relations:
+  - type: calls
+    target: service:vertex-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

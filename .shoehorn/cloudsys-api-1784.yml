@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-1784
+  name: Cloudsys Api 1784
+  type: api
+  description: Cloudsys Api 1784 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-1784
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/551102354/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-1784
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7726

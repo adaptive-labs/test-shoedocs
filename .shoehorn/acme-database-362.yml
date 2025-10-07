@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-database-362
+  name: Acme Database 362
+  type: database
+  description: Acme Database 362 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-database-362
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/151891307/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-database-362
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9456

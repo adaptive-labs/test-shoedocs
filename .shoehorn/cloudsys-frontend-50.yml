@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-frontend-50
+  name: Cloudsys Frontend 50
+  type: frontend
+  description: Cloudsys Frontend 50 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-frontend-50
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/876425462/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-frontend-50
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6258
+relations:
+  - type: calls
+    target: service:cloudsys-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

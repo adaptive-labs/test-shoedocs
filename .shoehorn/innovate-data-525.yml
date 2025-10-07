@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-data-525
+  name: Innovate Data 525
+  type: data
+  description: Innovate Data 525 service for innovate platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-data-525
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/2098747637/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-data-525
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6228

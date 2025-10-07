@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-frontend-754
+  name: Cloudsys Frontend 754
+  type: frontend
+  description: Cloudsys Frontend 754 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-frontend-754
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1169277364/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-frontend-754
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9351
+relations:
+  - type: calls
+    target: service:cloudsys-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

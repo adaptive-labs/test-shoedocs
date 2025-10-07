@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-infra-850
+  name: Vertex Infra 850
+  type: infra
+  description: Vertex Infra 850 service for vertex platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-infra-850
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/986119904/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-infra-850
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4050

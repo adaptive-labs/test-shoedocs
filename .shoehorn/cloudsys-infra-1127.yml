@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-infra-1127
+  name: Cloudsys Infra 1127
+  type: infra
+  description: Cloudsys Infra 1127 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: development
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-infra-1127
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/135211448/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-infra-1127
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6937

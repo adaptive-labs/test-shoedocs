@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-146
+  name: Cloudsys Data 146
+  type: data
+  description: Cloudsys Data 146 service for cloudsys platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-146
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1590300427/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-146
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4675

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-api-996
+  name: Vertex Api 996
+  type: api
+  description: Vertex Api 996 service for vertex platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-api-996
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/220813159/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-api-996
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7908

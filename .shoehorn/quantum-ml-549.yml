@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-ml-549
+  name: Quantum Ml 549
+  type: ml
+  description: Quantum Ml 549 service for quantum platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-ml-549
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1303587071/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-ml-549
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3457

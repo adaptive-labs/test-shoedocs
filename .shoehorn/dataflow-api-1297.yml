@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-api-1297
+  name: Dataflow Api 1297
+  type: api
+  description: Dataflow Api 1297 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-api-1297
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1692967688/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-api-1297
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9971

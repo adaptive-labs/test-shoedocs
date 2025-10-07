@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-infra-887
+  name: Vertex Infra 887
+  type: infra
+  description: Vertex Infra 887 service for vertex platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-infra-887
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/504372366/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-infra-887
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6261

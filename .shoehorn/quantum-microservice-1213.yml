@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-microservice-1213
+  name: Quantum Microservice 1213
+  type: microservice
+  description: Quantum Microservice 1213 service for quantum platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-microservice-1213
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1272305556/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-microservice-1213
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4772

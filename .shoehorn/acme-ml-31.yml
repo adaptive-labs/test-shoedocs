@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-ml-31
+  name: Acme Ml 31
+  type: ml
+  description: Acme Ml 31 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-ml-31
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1705687047/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-ml-31
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4985

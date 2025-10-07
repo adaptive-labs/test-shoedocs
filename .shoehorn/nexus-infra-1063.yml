@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-infra-1063
+  name: Nexus Infra 1063
+  type: infra
+  description: Nexus Infra 1063 service for nexus platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-infra-1063
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1248340191/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-infra-1063
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4954

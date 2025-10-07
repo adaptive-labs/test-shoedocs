@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-infra-665
+  name: Acme Infra 665
+  type: infra
+  description: Acme Infra 665 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-infra-665
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/826092580/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-infra-665
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7762

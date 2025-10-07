@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-1271
+  name: Innovate Microservice 1271
+  type: microservice
+  description: Innovate Microservice 1271 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-1271
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1072354548/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-1271
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8517

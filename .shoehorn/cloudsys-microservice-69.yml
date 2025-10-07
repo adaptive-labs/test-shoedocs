@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-69
+  name: Cloudsys Microservice 69
+  type: microservice
+  description: Cloudsys Microservice 69 service for cloudsys platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-69
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1978489837/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-69
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9918

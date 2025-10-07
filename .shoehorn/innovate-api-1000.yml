@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-api-1000
+  name: Innovate Api 1000
+  type: api
+  description: Innovate Api 1000 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-api-1000
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/358642655/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-api-1000
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7712

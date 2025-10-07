@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-microservice-28
+  name: Acme Microservice 28
+  type: microservice
+  description: Acme Microservice 28 service for acme platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-microservice-28
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/115282771/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-microservice-28
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7073

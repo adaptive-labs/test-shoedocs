@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-database-1397
+  name: Techcorp Database 1397
+  type: database
+  description: Techcorp Database 1397 service for techcorp platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-database-1397
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1710964189/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-database-1397
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3007

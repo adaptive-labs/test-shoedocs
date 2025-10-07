@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-data-778
+  name: Quantum Data 778
+  type: data
+  description: Quantum Data 778 service for quantum platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-data-778
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/833873877/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-data-778
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9749

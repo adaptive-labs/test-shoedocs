@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-476
+  name: Cloudsys Backend 476
+  type: backend
+  description: Cloudsys Backend 476 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-476
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1015147929/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-476
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8866

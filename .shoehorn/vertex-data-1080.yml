@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-data-1080
+  name: Vertex Data 1080
+  type: data
+  description: Vertex Data 1080 service for vertex platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-data-1080
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/742957215/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-data-1080
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6379

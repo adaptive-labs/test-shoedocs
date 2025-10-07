@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-database-88
+  name: Techcorp Database 88
+  type: database
+  description: Techcorp Database 88 service for techcorp platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-database-88
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/690815957/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-database-88
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3828

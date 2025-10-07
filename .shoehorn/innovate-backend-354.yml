@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-backend-354
+  name: Innovate Backend 354
+  type: backend
+  description: Innovate Backend 354 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-backend-354
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1910552483/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-backend-354
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5731

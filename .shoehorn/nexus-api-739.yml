@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-api-739
+  name: Nexus Api 739
+  type: api
+  description: Nexus Api 739 service for nexus platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-api-739
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1569958807/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-api-739
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8843

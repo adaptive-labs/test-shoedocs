@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-ml-966
+  name: Dataflow Ml 966
+  type: ml
+  description: Dataflow Ml 966 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-ml-966
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/555306207/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-ml-966
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9897

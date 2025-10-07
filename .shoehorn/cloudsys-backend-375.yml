@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-375
+  name: Cloudsys Backend 375
+  type: backend
+  description: Cloudsys Backend 375 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-375
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1366796612/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-375
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5574

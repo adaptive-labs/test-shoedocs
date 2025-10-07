@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-microservice-785
+  name: Techcorp Microservice 785
+  type: microservice
+  description: Techcorp Microservice 785 service for techcorp platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: development
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-microservice-785
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/714754644/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-microservice-785
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4575

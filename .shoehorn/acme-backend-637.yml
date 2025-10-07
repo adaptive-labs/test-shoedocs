@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-backend-637
+  name: Acme Backend 637
+  type: backend
+  description: Acme Backend 637 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-backend-637
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/352577822/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-backend-637
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7015

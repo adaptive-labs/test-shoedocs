@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-infra-1507
+  name: Innovate Infra 1507
+  type: infra
+  description: Innovate Infra 1507 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-infra-1507
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/752694331/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-infra-1507
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4124

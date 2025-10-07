@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-api-793
+  name: Dataflow Api 793
+  type: api
+  description: Dataflow Api 793 service for dataflow platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-api-793
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/151745469/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-api-793
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4847

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-infra-30
+  name: Nexus Infra 30
+  type: infra
+  description: Nexus Infra 30 service for nexus platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-infra-30
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/1545536266/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-infra-30
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4819

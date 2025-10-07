@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-microservice-490
+  name: Acme Microservice 490
+  type: microservice
+  description: Acme Microservice 490 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-microservice-490
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1248860159/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-microservice-490
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3391

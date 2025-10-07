@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-data-95
+  name: Acme Data 95
+  type: data
+  description: Acme Data 95 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-data-95
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1057792753/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-data-95
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4808

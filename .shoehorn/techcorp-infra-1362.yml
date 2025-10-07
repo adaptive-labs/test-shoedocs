@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-infra-1362
+  name: Techcorp Infra 1362
+  type: infra
+  description: Techcorp Infra 1362 service for techcorp platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-infra-1362
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1599272034/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-infra-1362
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8923

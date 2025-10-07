@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-ml-524
+  name: Techcorp Ml 524
+  type: ml
+  description: Techcorp Ml 524 service for techcorp platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-ml-524
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/262200381/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-ml-524
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7897

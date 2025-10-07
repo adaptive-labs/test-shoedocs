@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-1508
+  name: Acme Api 1508
+  type: api
+  description: Acme Api 1508 service for acme platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-1508
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/562400544/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-1508
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7164

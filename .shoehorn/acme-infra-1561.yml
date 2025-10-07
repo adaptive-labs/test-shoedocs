@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-infra-1561
+  name: Acme Infra 1561
+  type: infra
+  description: Acme Infra 1561 service for acme platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-infra-1561
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1116513284/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-infra-1561
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8757

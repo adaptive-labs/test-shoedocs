@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-ml-950
+  name: Cloudsys Ml 950
+  type: ml
+  description: Cloudsys Ml 950 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-ml-950
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2126169416/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-ml-950
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7910

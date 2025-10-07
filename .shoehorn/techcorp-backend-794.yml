@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-backend-794
+  name: Techcorp Backend 794
+  type: backend
+  description: Techcorp Backend 794 service for techcorp platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-backend-794
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/2131149188/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-backend-794
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4582

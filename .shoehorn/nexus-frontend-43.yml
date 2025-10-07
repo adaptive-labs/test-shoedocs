@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-frontend-43
+  name: Nexus Frontend 43
+  type: frontend
+  description: Nexus Frontend 43 service for nexus platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-frontend-43
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/993682389/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-frontend-43
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3740
+relations:
+  - type: calls
+    target: service:nexus-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

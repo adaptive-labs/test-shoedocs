@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-1017
+  name: Cloudsys Backend 1017
+  type: backend
+  description: Cloudsys Backend 1017 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-1017
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1470327116/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-1017
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8309

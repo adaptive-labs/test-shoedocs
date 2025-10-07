@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-backend-796
+  name: Acme Backend 796
+  type: backend
+  description: Acme Backend 796 service for acme platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-backend-796
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/247396192/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-backend-796
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4978

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-backend-27
+  name: Innovate Backend 27
+  type: backend
+  description: Innovate Backend 27 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-backend-27
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/956327615/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-backend-27
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3728

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-736
+  name: Cloudsys Backend 736
+  type: backend
+  description: Cloudsys Backend 736 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-736
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/791376475/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-736
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3130

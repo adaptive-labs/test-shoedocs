@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-1517
+  name: Vertex Microservice 1517
+  type: microservice
+  description: Vertex Microservice 1517 service for vertex platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-1517
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/2093017995/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-1517
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7915

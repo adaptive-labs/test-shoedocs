@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-infra-734
+  name: Techcorp Infra 734
+  type: infra
+  description: Techcorp Infra 734 service for techcorp platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: development
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-infra-734
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/2014812401/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-infra-734
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3815

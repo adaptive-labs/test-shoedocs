@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-microservice-795
+  name: Acme Microservice 795
+  type: microservice
+  description: Acme Microservice 795 service for acme platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-microservice-795
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/374499312/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-microservice-795
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4577

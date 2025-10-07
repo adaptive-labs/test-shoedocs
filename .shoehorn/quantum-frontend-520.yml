@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-frontend-520
+  name: Quantum Frontend 520
+  type: frontend
+  description: Quantum Frontend 520 service for quantum platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-frontend-520
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1426707835/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-frontend-520
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8070
+relations:
+  - type: calls
+    target: service:quantum-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

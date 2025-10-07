@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-infra-17
+  name: Cloudsys Infra 17
+  type: infra
+  description: Cloudsys Infra 17 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: experimental
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-infra-17
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1834438814/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-infra-17
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5280

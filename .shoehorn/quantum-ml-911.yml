@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-ml-911
+  name: Quantum Ml 911
+  type: ml
+  description: Quantum Ml 911 service for quantum platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-ml-911
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1094851266/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-ml-911
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9546

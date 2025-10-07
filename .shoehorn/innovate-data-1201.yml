@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-data-1201
+  name: Innovate Data 1201
+  type: data
+  description: Innovate Data 1201 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-data-1201
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/844120449/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-data-1201
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9433

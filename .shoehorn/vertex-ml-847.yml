@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-ml-847
+  name: Vertex Ml 847
+  type: ml
+  description: Vertex Ml 847 service for vertex platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-ml-847
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/161480700/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-ml-847
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5194

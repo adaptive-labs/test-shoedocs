@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-api-91
+  name: Vertex Api 91
+  type: api
+  description: Vertex Api 91 service for vertex platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-api-91
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/132270369/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-api-91
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5614

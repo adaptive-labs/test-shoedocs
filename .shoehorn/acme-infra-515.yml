@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-infra-515
+  name: Acme Infra 515
+  type: infra
+  description: Acme Infra 515 service for acme platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-infra-515
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/760632281/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-infra-515
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3520

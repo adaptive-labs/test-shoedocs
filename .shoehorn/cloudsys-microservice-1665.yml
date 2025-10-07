@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-1665
+  name: Cloudsys Microservice 1665
+  type: microservice
+  description: Cloudsys Microservice 1665 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-1665
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1486203753/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-1665
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9911

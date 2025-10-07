@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-api-1451
+  name: Quantum Api 1451
+  type: api
+  description: Quantum Api 1451 service for quantum platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-api-1451
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/359285442/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-api-1451
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3480

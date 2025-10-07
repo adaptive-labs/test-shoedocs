@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-822
+  name: Cloudsys Microservice 822
+  type: microservice
+  description: Cloudsys Microservice 822 service for cloudsys platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-822
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/442642782/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-822
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7949

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-ml-1131
+  name: Acme Ml 1131
+  type: ml
+  description: Acme Ml 1131 service for acme platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-ml-1131
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/175678737/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-ml-1131
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9763

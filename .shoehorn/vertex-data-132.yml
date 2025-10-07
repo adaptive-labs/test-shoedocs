@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-data-132
+  name: Vertex Data 132
+  type: data
+  description: Vertex Data 132 service for vertex platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-data-132
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1532725289/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-data-132
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7736

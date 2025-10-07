@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-frontend-1338
+  name: Innovate Frontend 1338
+  type: frontend
+  description: Innovate Frontend 1338 service for innovate platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-frontend-1338
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/900498361/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-frontend-1338
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3578
+relations:
+  - type: calls
+    target: service:innovate-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

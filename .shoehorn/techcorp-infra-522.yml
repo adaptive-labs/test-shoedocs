@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-infra-522
+  name: Techcorp Infra 522
+  type: infra
+  description: Techcorp Infra 522 service for techcorp platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-infra-522
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/351668567/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-infra-522
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8470

@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-frontend-930
+  name: Cloudsys Frontend 930
+  type: frontend
+  description: Cloudsys Frontend 930 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-frontend-930
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1452510187/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-frontend-930
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6691
+relations:
+  - type: calls
+    target: service:cloudsys-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-database-225
+  name: Acme Database 225
+  type: database
+  description: Acme Database 225 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: development
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-database-225
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1307183330/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-database-225
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6324

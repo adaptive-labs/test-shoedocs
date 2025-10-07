@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-api-771
+  name: Dataflow Api 771
+  type: api
+  description: Dataflow Api 771 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-api-771
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1211043923/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-api-771
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3852

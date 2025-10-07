@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-data-1319
+  name: Quantum Data 1319
+  type: data
+  description: Quantum Data 1319 service for quantum platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-data-1319
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1249893295/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-data-1319
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9533

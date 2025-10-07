@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-data-761
+  name: Acme Data 761
+  type: data
+  description: Acme Data 761 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-data-761
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/506259300/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-data-761
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6631

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-ml-25
+  name: Techcorp Ml 25
+  type: ml
+  description: Techcorp Ml 25 service for techcorp platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-ml-25
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/51241494/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-ml-25
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7616

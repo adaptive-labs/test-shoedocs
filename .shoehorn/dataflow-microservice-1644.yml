@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-microservice-1644
+  name: Dataflow Microservice 1644
+  type: microservice
+  description: Dataflow Microservice 1644 service for dataflow platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-microservice-1644
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/311266266/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-microservice-1644
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3517

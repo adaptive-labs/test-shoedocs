@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-894
+  name: Cloudsys Api 894
+  type: api
+  description: Cloudsys Api 894 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: experimental
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-894
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1776485849/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-894
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5643

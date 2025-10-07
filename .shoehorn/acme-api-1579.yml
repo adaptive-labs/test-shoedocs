@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-1579
+  name: Acme Api 1579
+  type: api
+  description: Acme Api 1579 service for acme platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-1579
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/230855743/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-1579
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9097

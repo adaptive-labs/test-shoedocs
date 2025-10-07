@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-535
+  name: Cloudsys Api 535
+  type: api
+  description: Cloudsys Api 535 service for cloudsys platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-535
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1352939261/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-535
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3133

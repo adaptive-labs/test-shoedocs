@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-867
+  name: Innovate Microservice 867
+  type: microservice
+  description: Innovate Microservice 867 service for innovate platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: development
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-867
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/410928902/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-867
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4664

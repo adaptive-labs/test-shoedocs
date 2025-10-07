@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-microservice-201
+  name: Quantum Microservice 201
+  type: microservice
+  description: Quantum Microservice 201 service for quantum platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-microservice-201
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/2034960098/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-microservice-201
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5559

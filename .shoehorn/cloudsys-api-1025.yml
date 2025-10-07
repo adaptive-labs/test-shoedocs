@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-1025
+  name: Cloudsys Api 1025
+  type: api
+  description: Cloudsys Api 1025 service for cloudsys platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: staging
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-1025
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/663135939/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-1025
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9255

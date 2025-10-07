@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-1418
+  name: Innovate Microservice 1418
+  type: microservice
+  description: Innovate Microservice 1418 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-1418
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1216345903/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-1418
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6966

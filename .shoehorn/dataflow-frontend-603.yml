@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-frontend-603
+  name: Dataflow Frontend 603
+  type: frontend
+  description: Dataflow Frontend 603 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: deprecated
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-frontend-603
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/147097989/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-frontend-603
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4273
+relations:
+  - type: calls
+    target: service:dataflow-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-backend-241
+  name: Quantum Backend 241
+  type: backend
+  description: Quantum Backend 241 service for quantum platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-backend-241
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/622052968/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-backend-241
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3165

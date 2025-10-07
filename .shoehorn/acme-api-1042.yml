@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-1042
+  name: Acme Api 1042
+  type: api
+  description: Acme Api 1042 service for acme platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-1042
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/453503999/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-1042
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7230

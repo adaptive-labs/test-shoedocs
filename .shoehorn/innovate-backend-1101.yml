@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-backend-1101
+  name: Innovate Backend 1101
+  type: backend
+  description: Innovate Backend 1101 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-backend-1101
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1040254394/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-backend-1101
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9306

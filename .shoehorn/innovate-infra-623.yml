@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-infra-623
+  name: Innovate Infra 623
+  type: infra
+  description: Innovate Infra 623 service for innovate platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-infra-623
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/38411516/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-infra-623
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6695

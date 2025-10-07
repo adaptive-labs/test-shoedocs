@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-1111
+  name: Innovate Microservice 1111
+  type: microservice
+  description: Innovate Microservice 1111 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-1111
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1486459192/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-1111
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3956

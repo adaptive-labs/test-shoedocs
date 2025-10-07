@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-1079
+  name: Cloudsys Data 1079
+  type: data
+  description: Cloudsys Data 1079 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-1079
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1583055782/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-1079
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5612

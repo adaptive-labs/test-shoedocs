@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-api-1520
+  name: Innovate Api 1520
+  type: api
+  description: Innovate Api 1520 service for innovate platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-api-1520
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1196392034/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-api-1520
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4661

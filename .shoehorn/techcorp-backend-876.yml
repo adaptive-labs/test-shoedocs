@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-backend-876
+  name: Techcorp Backend 876
+  type: backend
+  description: Techcorp Backend 876 service for techcorp platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: experimental
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-backend-876
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/2034538423/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-backend-876
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8509

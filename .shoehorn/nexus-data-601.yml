@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-data-601
+  name: Nexus Data 601
+  type: data
+  description: Nexus Data 601 service for nexus platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: development
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-data-601
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/346250842/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-data-601
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4911

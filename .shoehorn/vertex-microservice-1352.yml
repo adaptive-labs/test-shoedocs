@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-1352
+  name: Vertex Microservice 1352
+  type: microservice
+  description: Vertex Microservice 1352 service for vertex platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-1352
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1281256643/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-1352
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6563

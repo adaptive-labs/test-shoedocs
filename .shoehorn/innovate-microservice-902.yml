@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-902
+  name: Innovate Microservice 902
+  type: microservice
+  description: Innovate Microservice 902 service for innovate platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: development
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-902
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1632073187/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-902
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8580

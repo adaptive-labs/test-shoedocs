@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-frontend-1062
+  name: Vertex Frontend 1062
+  type: frontend
+  description: Vertex Frontend 1062 service for vertex platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-frontend-1062
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1620402335/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-frontend-1062
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7833
+relations:
+  - type: calls
+    target: service:vertex-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

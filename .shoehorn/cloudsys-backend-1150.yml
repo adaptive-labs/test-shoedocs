@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-1150
+  name: Cloudsys Backend 1150
+  type: backend
+  description: Cloudsys Backend 1150 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: experimental
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-1150
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1350475089/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-1150
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9321

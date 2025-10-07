@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-database-743
+  name: Acme Database 743
+  type: database
+  description: Acme Database 743 service for acme platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: production
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-database-743
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1315987432/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-database-743
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6369

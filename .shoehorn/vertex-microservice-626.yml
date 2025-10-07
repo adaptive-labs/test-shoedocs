@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-626
+  name: Vertex Microservice 626
+  type: microservice
+  description: Vertex Microservice 626 service for vertex platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-626
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1491314749/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-626
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5530

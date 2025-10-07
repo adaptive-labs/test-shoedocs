@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-1135
+  name: Cloudsys Data 1135
+  type: data
+  description: Cloudsys Data 1135 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-1135
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/493573283/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-1135
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6246

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-1439
+  name: Cloudsys Api 1439
+  type: api
+  description: Cloudsys Api 1439 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-1439
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2136611337/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-1439
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6153

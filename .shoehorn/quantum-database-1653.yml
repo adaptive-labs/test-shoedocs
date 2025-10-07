@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-database-1653
+  name: Quantum Database 1653
+  type: database
+  description: Quantum Database 1653 service for quantum platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-database-1653
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/160818739/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-database-1653
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5485

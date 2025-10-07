@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-419
+  name: Vertex Microservice 419
+  type: microservice
+  description: Vertex Microservice 419 service for vertex platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-419
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/335351158/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-419
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7548

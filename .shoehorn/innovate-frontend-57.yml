@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-frontend-57
+  name: Innovate Frontend 57
+  type: frontend
+  description: Innovate Frontend 57 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-frontend-57
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1714211755/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-frontend-57
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4488
+relations:
+  - type: calls
+    target: service:innovate-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

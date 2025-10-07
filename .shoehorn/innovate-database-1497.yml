@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-database-1497
+  name: Innovate Database 1497
+  type: database
+  description: Innovate Database 1497 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-database-1497
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1965029739/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-database-1497
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9538

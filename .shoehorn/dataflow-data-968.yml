@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-968
+  name: Dataflow Data 968
+  type: data
+  description: Dataflow Data 968 service for dataflow platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-968
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1793178336/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-968
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8814

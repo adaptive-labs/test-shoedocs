@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-infra-1181
+  name: Techcorp Infra 1181
+  type: infra
+  description: Techcorp Infra 1181 service for techcorp platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-infra-1181
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/2038350151/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-infra-1181
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5710

@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-frontend-1670
+  name: Cloudsys Frontend 1670
+  type: frontend
+  description: Cloudsys Frontend 1670 service for cloudsys platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-frontend-1670
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1047951011/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-frontend-1670
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3423
+relations:
+  - type: calls
+    target: service:cloudsys-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

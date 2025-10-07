@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-microservice-1759
+  name: Dataflow Microservice 1759
+  type: microservice
+  description: Dataflow Microservice 1759 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-microservice-1759
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1322301431/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-microservice-1759
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7520

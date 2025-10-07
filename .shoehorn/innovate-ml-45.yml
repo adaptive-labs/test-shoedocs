@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-45
+  name: Innovate Ml 45
+  type: ml
+  description: Innovate Ml 45 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-45
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/2067113173/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-45
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7289

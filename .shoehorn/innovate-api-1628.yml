@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-api-1628
+  name: Innovate Api 1628
+  type: api
+  description: Innovate Api 1628 service for innovate platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-api-1628
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/100487274/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-api-1628
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4233

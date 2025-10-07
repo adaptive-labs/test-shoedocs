@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-backend-1085
+  name: Dataflow Backend 1085
+  type: backend
+  description: Dataflow Backend 1085 service for dataflow platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: experimental
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-backend-1085
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/558946116/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-backend-1085
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3607

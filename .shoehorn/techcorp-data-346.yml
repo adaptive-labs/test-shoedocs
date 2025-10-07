@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-data-346
+  name: Techcorp Data 346
+  type: data
+  description: Techcorp Data 346 service for techcorp platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-data-346
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/477021020/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-data-346
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8344

@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-frontend-518
+  name: Vertex Frontend 518
+  type: frontend
+  description: Vertex Frontend 518 service for vertex platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-frontend-518
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1423629518/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-frontend-518
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8620
+relations:
+  - type: calls
+    target: service:vertex-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

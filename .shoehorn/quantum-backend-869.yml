@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-backend-869
+  name: Quantum Backend 869
+  type: backend
+  description: Quantum Backend 869 service for quantum platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-backend-869
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1912812361/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-backend-869
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5617

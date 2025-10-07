@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-1032
+  name: Vertex Microservice 1032
+  type: microservice
+  description: Vertex Microservice 1032 service for vertex platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-1032
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/228982203/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-1032
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:7617

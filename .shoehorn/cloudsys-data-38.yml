@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-data-38
+  name: Cloudsys Data 38
+  type: data
+  description: Cloudsys Data 38 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-data-38
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/717914750/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-data-38
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4838

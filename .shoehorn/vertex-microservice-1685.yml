@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-microservice-1685
+  name: Vertex Microservice 1685
+  type: microservice
+  description: Vertex Microservice 1685 service for vertex platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-microservice-1685
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/333053077/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-microservice-1685
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9639

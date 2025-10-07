@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-ml-680
+  name: Innovate Ml 680
+  type: ml
+  description: Innovate Ml 680 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: development
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-ml-680
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/640371089/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-ml-680
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9914

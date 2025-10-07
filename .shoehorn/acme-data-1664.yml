@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-data-1664
+  name: Acme Data 1664
+  type: data
+  description: Acme Data 1664 service for acme platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: deprecated
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-data-1664
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/930593680/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-data-1664
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5722

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-460
+  name: Acme Api 460
+  type: api
+  description: Acme Api 460 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-460
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1312857499/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-460
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8215

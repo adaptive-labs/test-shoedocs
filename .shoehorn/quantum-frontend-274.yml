@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-frontend-274
+  name: Quantum Frontend 274
+  type: frontend
+  description: Quantum Frontend 274 service for quantum platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-frontend-274
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/1584298161/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-frontend-274
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9952
+relations:
+  - type: calls
+    target: service:quantum-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

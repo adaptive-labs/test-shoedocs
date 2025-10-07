@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-microservice-140
+  name: Innovate Microservice 140
+  type: microservice
+  description: Innovate Microservice 140 service for innovate platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-microservice-140
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/1666600277/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-microservice-140
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9013

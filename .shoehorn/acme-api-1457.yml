@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-1457
+  name: Acme Api 1457
+  type: api
+  description: Acme Api 1457 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: experimental
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-1457
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1347018967/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-1457
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3361

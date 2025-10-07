@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-microservice-716
+  name: Cloudsys Microservice 716
+  type: microservice
+  description: Cloudsys Microservice 716 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-microservice-716
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/2090782277/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-microservice-716
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5488

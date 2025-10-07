@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-infra-970
+  name: Dataflow Infra 970
+  type: infra
+  description: Dataflow Infra 970 service for dataflow platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-infra-970
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1626338017/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-infra-970
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5453

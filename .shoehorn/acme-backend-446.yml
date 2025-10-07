@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-backend-446
+  name: Acme Backend 446
+  type: backend
+  description: Acme Backend 446 service for acme platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: experimental
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-backend-446
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1472902101/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-backend-446
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3800

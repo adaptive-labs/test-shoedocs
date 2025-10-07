@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-api-395
+  name: Cloudsys Api 395
+  type: api
+  description: Cloudsys Api 395 service for cloudsys platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: development
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-api-395
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1456415920/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-api-395
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9259

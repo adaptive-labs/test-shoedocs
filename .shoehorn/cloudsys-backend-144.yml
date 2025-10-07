@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-backend-144
+  name: Cloudsys Backend 144
+  type: backend
+  description: Cloudsys Backend 144 service for cloudsys platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-backend-144
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1402544474/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-backend-144
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4588

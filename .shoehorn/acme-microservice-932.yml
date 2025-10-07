@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-microservice-932
+  name: Acme Microservice 932
+  type: microservice
+  description: Acme Microservice 932 service for acme platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-microservice-932
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/938445310/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-microservice-932
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9842

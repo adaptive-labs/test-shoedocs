@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-data-1375
+  name: Dataflow Data 1375
+  type: data
+  description: Dataflow Data 1375 service for dataflow platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-data-1375
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1207166742/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-data-1375
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9581

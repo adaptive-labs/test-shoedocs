@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-data-72
+  name: Vertex Data 72
+  type: data
+  description: Vertex Data 72 service for vertex platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: production
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-data-72
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/1255731453/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-data-72
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4920

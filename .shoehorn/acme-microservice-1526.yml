@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-microservice-1526
+  name: Acme Microservice 1526
+  type: microservice
+  description: Acme Microservice 1526 service for acme platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: deprecated
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-microservice-1526
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/1972001268/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-microservice-1526
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3612

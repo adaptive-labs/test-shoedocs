@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: techcorp-ml-1294
+  name: Techcorp Ml 1294
+  type: ml
+  description: Techcorp Ml 1294 service for techcorp platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: development
+tags:
+  - ml
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/techcorp/techcorp-ml-1294
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.techcorp.com/d/1697416615/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.techcorp.com/job/techcorp-ml-1294
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5172

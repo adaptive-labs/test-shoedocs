@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-microservice-837
+  name: Acme Microservice 837
+  type: microservice
+  description: Acme Microservice 837 service for acme platform
+owner:
+  - type: team
+    id: frontend-team
+lifecycle: production
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-microservice-837
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/507384209/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-microservice-837
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4186

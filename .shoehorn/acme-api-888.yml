@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-api-888
+  name: Acme Api 888
+  type: api
+  description: Acme Api 888 service for acme platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - api
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-api-888
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/660774157/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-api-888
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8051

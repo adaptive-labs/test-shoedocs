@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-frontend-973
+  name: Cloudsys Frontend 973
+  type: frontend
+  description: Cloudsys Frontend 973 service for cloudsys platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: deprecated
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-frontend-973
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/588247202/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-frontend-973
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3520
+relations:
+  - type: calls
+    target: service:cloudsys-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

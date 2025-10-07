@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: innovate-infra-284
+  name: Innovate Infra 284
+  type: infra
+  description: Innovate Infra 284 service for innovate platform
+owner:
+  - type: team
+    id: backend-team
+lifecycle: staging
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/innovate/innovate-infra-284
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.innovate.com/d/876188508/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.innovate.com/job/innovate-infra-284
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8987

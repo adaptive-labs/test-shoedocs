@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-backend-1182
+  name: Dataflow Backend 1182
+  type: backend
+  description: Dataflow Backend 1182 service for dataflow platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: development
+tags:
+  - backend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-backend-1182
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1035458343/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-backend-1182
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6560

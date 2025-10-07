@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-microservice-252
+  name: Dataflow Microservice 252
+  type: microservice
+  description: Dataflow Microservice 252 service for dataflow platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-microservice-252
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/2101587351/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-microservice-252
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3124

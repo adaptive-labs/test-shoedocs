@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: nexus-data-572
+  name: Nexus Data 572
+  type: data
+  description: Nexus Data 572 service for nexus platform
+owner:
+  - type: team
+    id: ml-team
+lifecycle: staging
+tags:
+  - data
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/nexus/nexus-data-572
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.nexus.com/d/709508189/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.nexus.com/job/nexus-data-572
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:6712

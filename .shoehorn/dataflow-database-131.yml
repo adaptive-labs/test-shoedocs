@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-database-131
+  name: Dataflow Database 131
+  type: database
+  description: Dataflow Database 131 service for dataflow platform
+owner:
+  - type: team
+    id: infra-team
+lifecycle: experimental
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-database-131
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/92886028/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-database-131
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:4589

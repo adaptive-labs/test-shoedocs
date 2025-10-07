@@ -1,0 +1,35 @@
+﻿schemaVersion: 1
+service:
+  id: cloudsys-frontend-701
+  name: Cloudsys Frontend 701
+  type: frontend
+  description: Cloudsys Frontend 701 service for cloudsys platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: production
+tags:
+  - frontend
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/cloudsys/cloudsys-frontend-701
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.cloudsys.com/d/1865815710/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.cloudsys.com/job/cloudsys-frontend-701
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:9720
+relations:
+  - type: calls
+    target: service:cloudsys-api
+    via: REST
+    notes: Primary API dependency
+  - type: depends_on
+    target: service:oauth2-proxy
+    notes: Authentication proxy

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: acme-database-1075
+  name: Acme Database 1075
+  type: database
+  description: Acme Database 1075 service for acme platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: development
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/acme/acme-database-1075
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.acme.com/d/775713857/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.acme.com/job/acme-database-1075
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3125

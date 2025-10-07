@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: dataflow-infra-848
+  name: Dataflow Infra 848
+  type: infra
+  description: Dataflow Infra 848 service for dataflow platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: experimental
+tags:
+  - infra
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/dataflow/dataflow-infra-848
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.dataflow.com/d/1982941446/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.dataflow.com/job/dataflow-infra-848
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:8913

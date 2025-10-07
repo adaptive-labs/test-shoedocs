@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: quantum-microservice-156
+  name: Quantum Microservice 156
+  type: microservice
+  description: Quantum Microservice 156 service for quantum platform
+owner:
+  - type: team
+    id: platform-team
+lifecycle: experimental
+tags:
+  - microservice
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/quantum/quantum-microservice-156
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.quantum.com/d/641864044/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.quantum.com/job/quantum-microservice-156
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:3555

@@ -1,0 +1,27 @@
+﻿schemaVersion: 1
+service:
+  id: vertex-database-1489
+  name: Vertex Database 1489
+  type: database
+  description: Vertex Database 1489 service for vertex platform
+owner:
+  - type: team
+    id: data-team
+lifecycle: experimental
+tags:
+  - database
+  - typescript
+  - docker
+links:
+  - name: Repository
+    url: https://github.com/vertex/vertex-database-1489
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.vertex.com/d/107735288/dashboard
+    icon: grafana
+  - name: CI/CD Pipeline
+    url: https://ci.vertex.com/job/vertex-database-1489
+    icon: jenkins
+interfaces:
+  http:
+    baseUrl: http://localhost:5580
