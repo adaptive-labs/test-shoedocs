@@ -15,7 +15,12 @@ tags:
 links:
   - name: Repository
     url: https://github.com/imbabamba/shoehorn
-  - name: Live Site
+    icon: github
+  - name: Grafana Dashboard
+    url: https://grafana.example.com/d/abcd1234/shoehorn-web
+    icon: grafana
+  - name: CI/CD Pipeline
+    icon: gitlab  
     url: https://portal.shoehorn.example.com
 interfaces:
   http:
