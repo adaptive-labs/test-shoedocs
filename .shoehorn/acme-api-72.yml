@@ -27,7 +27,7 @@ interfaces:
     baseUrl: http://localhost:4030
 relations:
   - type: depends_on
-    target: database:postgresql
+    target: database:postgresql-db-api2
     notes: Primary user data store
   - type: publishes_to
     target: topic:user-events

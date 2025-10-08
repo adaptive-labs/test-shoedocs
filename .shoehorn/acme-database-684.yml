@@ -27,7 +27,7 @@ interfaces:
     baseUrl: http://localhost:8285
 relations:
   - type: depends_on
-    target: database:postgresql
+    target: database:postgresql-db-api
     notes: Primary user data store
   - type: publishes_to
     target: topic:user-events
