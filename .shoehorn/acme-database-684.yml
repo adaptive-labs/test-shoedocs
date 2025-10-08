@@ -1,9 +1,9 @@
 ﻿schemaVersion: 1
 service:
-  id: acme-database-684
-  name: Acme Database 684
+  id: acme-test-db
+  name: Acme Test DB
   type: database
-  description: Acme Database 684 service for acme platform
+  description: Acme Test DB service for acme platform
 owner:
   - type: team
     id: frontend-team
@@ -32,3 +32,9 @@ relations:
   - type: publishes_to
     target: topic:user-events
     notes: User lifecycle events
+  - type: consumes_api
+    target: service:user-api
+    notes: User management functionality
+  - type: consumes_api
+    target: service:analytics-api
+    notes: Dashboard metrics and reports
