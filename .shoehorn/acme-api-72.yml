@@ -30,5 +30,5 @@ relations:
     target: database:postgresql-db-api2
     notes: Primary user data store
   - type: publishes_to
-    target: topic:user-events
-    notes: User lifecycle events
+    target: topic:user-profiles
+    notes: User Profiles
