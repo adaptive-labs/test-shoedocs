@@ -25,3 +25,10 @@ links:
 interfaces:
   http:
     baseUrl: http://localhost:8285
+relations:
+  - type: depends_on
+    target: database:postgresql
+    notes: Primary user data store
+  - type: publishes_to
+    target: topic:user-events
+    notes: User lifecycle events
