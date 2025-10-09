@@ -7,8 +7,8 @@ schemaVersion: 1
 # entity: test-shoedocs
 
 site:
-  name: "Test Shoedocs"
-  description: "Testing if shoedocs works"
+  name: "Shoedocs 101"
+  description: "Getting started with Shoedocs"
 
 features:
   search: true
@@ -19,15 +19,15 @@ features:
 
 docs:
   directory: "docs"
-  homepage: "README.md"
+  homepage: "docs/start.md"
 
 navigation:
   - title: "Documentation"
     items:
-      - title: "Test Page"
-        path: "test.md"
-      - title: "Test Page 2"
-        path: "test2.md"
+      - title: "Welcome"
+        path: "start.md"
+      - title: "Getting Started"
+        path: "how.md"
 
 tags:
   - test
