@@ -1,8 +1,9 @@
 schemaVersion: 1
 
 service:
-  id: test-shoedocs
-  name: Test Shoedocs
+  id: shoedocs-test
+  name: Shoedocs Test
+  description: A test service for Shoedocs documentation.
   type: techdocs
 
 owner:
