@@ -19,7 +19,7 @@ features:
 
 docs:
   directory: "docs"
-#  homepage: "docs/start.md"
+  homepage: "docs/start.md"
 
 navigation:
   - title: "Documentation"
