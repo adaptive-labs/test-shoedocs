@@ -29,6 +29,25 @@ navigation:
       - title: "Getting Started"
         path: "how.md"
 
+  - title: "Reference"
+    items:
+      # Group header without page (just a container)
+      - title: "Configuration"
+        # NO path - just organizes the items below
+        items:
+          - title: "Environment Variables"
+            path: "config/env.md"
+          - title: "Config Files"
+            path: "config/files.md"
+
+      # Group header WITH page (clickable + expandable)
+      - title: "CLI Commands"
+        path: "cli/overview.md"  # This makes the header clickable
+        items:
+          - title: "init"
+            path: "cli/init.md"
+          - title: "deploy"
+            path: "cli/deploy.md"
 tags:
   - test
   - documentation
